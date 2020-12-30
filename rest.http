@@ -1,2 +1,82 @@
 
+POST http://localhost/rest-php/api/post/create.php
+Content-Type: application/json
+
+{
+    "title": "first post",
+    "category_id": "1",
+    "body": "This is a sample post",
+    "author": "MD Minhazul Islam"
+}
+
+###
+
+PUT http://localhost/rest-php/api/post/update.php
+Content-Type: application/json
+
+{
+    "title": "first post",
+    "category_id": "1",
+    "body": "This is a sample post",
+    "author": "MD Minhazul Islam",
+    "id": "7"
+}
+
+###
+
 GET http://localhost/rest-php/api/post/read.php
+
+###
+
+GET http://localhost/rest-php/api/post/read-single.php?id=7
+
+###
+
+DELETE http://localhost/rest-php/api/post/delete.php
+Content-Type: application/json
+
+{
+    "id": "7"
+}
+
+###
+
+
+
+
+POST http://localhost/rest-php/api/category/create.php
+Content-Type: application/json
+
+{
+    "title": "sample category"
+}
+
+###
+
+PUT http://localhost/rest-php/api/category/update.php
+Content-Type: application/json
+
+{
+    "title": "Sample Category update",
+    "id": "6"
+}
+
+###
+
+GET http://localhost/rest-php/api/category/read.php
+
+###
+
+GET http://localhost/rest-php/api/category/read-single.php?id=6
+
+###
+
+DELETE http://localhost/rest-php/api/category/delete.php
+Content-Type: application/json
+
+{
+    "id": "6"
+}
+
+###
+
