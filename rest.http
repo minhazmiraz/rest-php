@@ -1,0 +1,2 @@
+
+GET http://localhost/rest-php/api/post/read.php
